@@ -1,0 +1,40 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.add-celebrity-button{
+  text-decoration: none;
+  display: block;
+  width: 250px;
+  padding: 15px;
+  border-radius: 5px;
+  background: aquamarine;
+  color:black;
+  border:none;
+  margin-top: 30px;
+  text-align: center;
+}
+.delete-celebrity-button{
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  background: red;
+  color:white;
+  border:none;
+  margin-top: 30px;
+  text-align: center;
+}
+.add-celebrity-form input{
+  display: block;
+  width: 250px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid grey;
+}
