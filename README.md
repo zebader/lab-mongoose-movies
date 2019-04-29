@@ -61,10 +61,10 @@ $ git push origin master
 After forking and cloning the project, you will have to run:
 
 ```
-express mongoose-movies --view=hbs --git
+express mongoose-movies --hbs --git
 ```
 
-Configurate all the files and other packages (mongoose, eslint, etc.)
+Configurate all the files and other packages (mongoose, etc.)
 
 And remember to install all the dependencies:
 
