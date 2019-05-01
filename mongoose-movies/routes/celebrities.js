@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Celebrity = require('./../models/celebrity')
 
-
 // GET '/celebrities'
 router.get('/', (req, res, next) => {
   Celebrity.find({})
@@ -51,8 +50,6 @@ router.get('/:_id/edit/', (req, res, next) => {
 router.post('/:_id', (req, res, next) => {
   const { _id } = req.params;
   const {name, occupation, catchPhrase} = req.body;
-  console.log('IDDDDDDDDDDDD',{ _id })
-  console.log('BODDDDYYYYY',{name, occupation, catchPhrase})
  
   Celebrity.findOneAndUpdate( { _id }, { $set: {name, occupation, catchPhrase} },{new: true} )
  .then( (celebrities) => res.redirect('/celebrities'))
